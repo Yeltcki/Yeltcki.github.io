@@ -81,11 +81,21 @@
         font-weight: bold;
       }
 
+      .result3 {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
 
       button {
         font-size: 15px;
         padding: 9px;
         font-family:sans-serif;
+      }
+
+      .explanation {
+        text-align: justify;
+
       }
 
     </style>
@@ -340,80 +350,79 @@
         </div>
         <div class="choices" id="choices">
           <label>
-            <input type="radio" name="q1" value="a"> C'est un outil qui permet d'attribuer des coordonnées dans 
+            <input type="radio" name="q1" value="a" explanation=""> C'est un outil qui permet d'attribuer des coordonnées dans 
             l'espace et dans le temps à des événements afin de s'y repérer. 
           </label>
           <label>
-            <input type="radio" name="q1" value="b"> C'est un synonyme de "vélocité" ou "vitesse de la lumière".
+            <input type="radio" name="q1" value="b" explanation=""> C'est un synonyme de "vélocité" ou "vitesse de la lumière".
           </label>
           <label>
-            <input type="radio" name="q1" value="c"> C'est un système de référence qui est nécessairement en accélération par 
+            <input type="radio" name="q1" value="c" explanation="Explication : un référentiel n'est pas nécessairement en 
+            accélération par rapport aux étoiles fixes. Un référentiel peut aussi être en mouvement rectiligne uniforme."> 
+            C'est un système de référence qui est nécessairement en accélération par 
             rapport aux étoiles fixes.
           </label>
           <label>
-            <input type="radio" name="q1" value="d"> C'est un système de référence qui est nécessairement en mouvement rectiligne 
-            uniforme.
+            <input type="radio" name="q1" value="d" explanation="Explication : un référentiel n'est pas nécessairement en mouvement rectiligne uniforme par rapport aux étoiles fixes. Il peut aussi être en accélération."> C'est un système de référence qui est nécessairement en mouvement rectiligne 
+            uniforme par rapport aux étoiles fixes.
           </label>
         </div>
-        <button onclick="checkAnswer()">Soumettre</button>
-        <p class="result" id="result"></p>
+        <button onclick="checkAnswer('q1', 'a')">Soumettre</button>
+        <p class="result" id="resultq1"></p>
 
 
         <div id="quiz-container">
           <div class="question" id="question">
-            <h2>Question 2 : Vrai ou faux ? Certains référentiels inertiels sont plus avantageux que d'autres.</h2>
+            <h2>Question 2 : Qu'est-ce qu'un référentiel inertiel ?</h2>
           </div>
           <div class="choices" id="choices">
             <label>
-              <input type="radio" name="q2" value="a"> Vrai.
+              <input type="radio" name="q2" value="a" explanation=""> C'est un système de référence qui est nécessairement en accélération par rapport aux étoiles fixes.
             </label>
             <label>
-              <input type="radio" name="q2" value="b"> Faux.
+              <input type="radio" name="q2" value="b"> C'est un système de référence qui est nécessairement en mouvement rectiligne uniforme par rapport aux étoiles fixes.
             </label>
           </div>
-          <button onclick="checkAnswer2()">Soumettre</button>
-          <p class="result2" id="result2"></p>
+          <button onclick="checkAnswer('q2', 'b')">Soumettre</button>
+          <p class="result2" id="resultq2"></p>
+
+          <div id="quiz-container">
+            <div class="question" id="question">
+              <h2>Question 3 : Vrai ou faux ? Certains référentiels inertiels sont plus avantageux que d'autres.</h2>
+            </div>
+            <div class="choices" id="choices">
+              <label>
+                <input type="radio" name="q3" value="a" explanation="Explication : le premier postulat de la théorie de la relativité restreinte affirme que tous les référentiels inertiels sont 'équivalents'."> Vrai.
+              </label>
+              <label>
+                <input type="radio" name="q3" value="b"> Faux.
+              </label>
+            </div>
+            <button onclick="checkAnswer('q3', 'b')">Soumettre</button>
+            <p class="result3" id="resultq3"></p>
         
       </div>
     </div>
 
     <script>
-      function checkAnswer() {
-        var selectedOption = document.querySelector('input[name="q1"]:checked');
+      function checkAnswer(inputName, correctAnswer) {
+        var selectedOption = document.querySelector(`input[name="${inputName}"]:checked`);
 
         if (selectedOption) {
           var userAnswer = selectedOption.value;
-          var correctAnswer = 'a';
     
           if (userAnswer === correctAnswer) {
-            document.getElementById('result').innerText = 'Bonne réponse !';
+            document.getElementById('result' + inputName).innerText = 'Bonne réponse !';
           } else {
-            document.getElementById('result').innerText = 'Réponse erronnée. Réessayez !';
+            const explaination = selectedOption.getAttribute("explanation")
+            document.getElementById('result' + inputName).innerText = 'Réponse erronnée. Réessayez ! ' + explaination;
           }
         } else {
           document.getElementById('result').innerText = 'Veuillez choisir une option.';
         }
       }
-    </script>
-    
-    <script>
-      function checkAnswer2() {
-        var selectedOption = document.querySelector('input[name="q2"]:checked');
 
-        if (selectedOption) {
-          var userAnswer = selectedOption.value;
-          var correctAnswer = 'b';
-    
-          if (userAnswer === correctAnswer) {
-            document.getElementById('result2').innerText = 'Bonne réponse !';
-          } else {
-            document.getElementById('result2').innerText = 'Réponse erronnée. Réessayez !';
-          }
-        } else {
-          document.getElementById('result2').innerText = 'Veuillez choisir une option.';
-        }
-      }
-    </script>
+</script>
 
     </div>
 
