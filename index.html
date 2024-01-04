@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.10.0/showdown.min.js"></script>
+ 
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>La théorie de la relativité restreinte</title>
+    <style>
+      a.savoir_plus:link {
+        color: red;
+      }
+      a.savoir_plus:visited {
+        color: orange;
+      }
+      body {
+        color: rgb(220, 220, 220);
+        background-color: rgb(34, 34, 34);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      img {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      
+      .active {
+        color: blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="tabs">
+      <a
+        href="#"
+        class="tab active"
+        onclick="showContent('contenuPrincipalContent', this)"
+        >Contenu principal</a
+      >
+      <a href="#" class="tab" onclick="showContent('contexteContent', this)"
+        >Contexte historique</a
+      >
+      <a
+        href="#"
+        class="tab"
+        onclick="showContent('sourcesSupplementairesContent', this)"
+        >Sources supplémentaires</a
+      >
+      <a href="#" class="tab" onclick="showContent('aProposContent', this)"
+        >À propos</a
+      >
+    </div>
+
+    <div class="content" id="contenuPrincipalContent">
+      <h1>La théorie de la relativité restreinte</h1>
+      <p>
+        Pendant des siècles, les scientifiques les plus prodigieux ont tenté de
+        découvrir les lois de la nature. En 1905, frappé par un coup de génie,
+        Einstein a formulé la théorie de la relativité restreinte qui a
+        révolutionné notre compréhension de l’univers. En fait, cette théorie
+        aborde des sujets profondément contre-intuitifs tel que le fait que la
+        vitesse de la lumière dans le vide est constante pour tous les
+        observateurs, peu importe leur vitesse. Malgré la contre-intuitivité des
+        concepts clés de cette théorie, il est utile de s’intéresser à ses
+        postulats fondamentaux afin de mieux comprendre le fonctionnement de
+        l’univers.
+        <br>
+        <br>
+        Nous nous intéresserons principalement aux deux postulats fondamentaux de cette théorie : (1) 
+        « tous les référentiels inertiels (qui ne sont pas en accélération) sont ‘équivalents’ » et (2) 
+        « la vitesse de la lumière dans le vide a la même valeur (approximativement 3×10<sup>8</sup> m/s) 
+        dans tous les référentiels inertiels », puis des conséquences qui en 
+        découlent, soit la <a href="#perte">perte de simultanéité</a>, la <a href="#dilatation">dilatation du temps</a> 
+        et la 
+        <a href="#contraction"> contraction des longueurs</a>. 
+        <br />
+        <br />
+        <b
+        span style="font-size: 19px;"><strong>Tous les référentiels inertiels
+           (qui ne sont pas en accélération) sont "équivalents"</strong></span></b>
+           <br>
+           <br>
+            
+
+           D'abord, sachons que, par définition, un référentiel est un outil qui permet 
+           d'attribuer des coordonnées dans l'espace et dans le temps à des événements. 
+           Les coordonnées utilisées sont (<i>x,y,z,t</i>), soit <i>x,y,z</i> pour l'espace et <i>t</i> pour le temps. 
+           Il existe deux principaux types de référentiels : les référentiels "inertiels" et les 
+           référentiels "non inertiels". Un référentiel inertiel est un système de référence qui est 
+           en mouvement rectiligne uniforme par rapport aux étoiles fixes, c'est-à-dire qu'il ne subit 
+           aucune accélération. Un référentiel non inertiel est un système de référence qui subit une 
+           accélération par rapport aux étoiles fixes. En physique, il importe de choisir le référentiel approprié 
+           en fonction de la situation. 
+           En relativité restreinte, nous parlerons davantage de référentiels inertiels. 
+           Maintenant que nous savons ce qu'est un référentiel, venons-en à la définition du 
+           postulat. En fait, celui-ci affirme qu'un référentiel inertiel donné n'est en aucun 
+           cas plus avantageux qu'un quelconque autre. Ceci dit, il n'est pas sensé de 
+           simplement dire qu'un objet est en mouvement. Il est plus logique d'affirmer 
+           qu'un objet est en mouvement par rapport à un autre. Le mouvement ne peut donc 
+           pas être absolu : il est relatif. D'ailleurs, c'est l'une des raisons qui 
+           explique le titre de cette théorie. 
+
+          Ce postulat, initialement développé par Galilée au XVIIe siècle affirme 
+          également que les lois de la physique sont les mêmes dans tous les référentiels 
+          inertiels. Par exemple, que l'on effectue une expérience physique sur un bateau 
+          qui se déplace à vitesse constante ou sur la plage, les résultats de l'expérience 
+         seront exactement les mêmes. Cela signifie que, du point de vue de la physique, il 
+          n'y a aucune différence entre le fait d'être immobile et le fait d'être en mouvement 
+         rectiligne uniforme (avancer en ligne droit à vitesse constante). Cela s'explique 
+         par le fait que, tout comme le mouvement, la vitesse est relative ; elle ne peut 
+         pas être absolue. Idem lorsque l'on affirme qu'un objet est immobile, il ne peut pas 
+         être immobile au sens absolu ; il est toujours immobile par rapport à quelque chose. 
+          Par exemple, lorsque vous êtes assis sur une chaise, vous n'êtes pas immobile par rapport 
+          au soleil. Einstein a par la suite ajouté de nouvelles idées importantes à ce postulat 
+          d'abord formulé par Galilée, en particulier dans le cadre de la théorie de la relativité 
+        restreinte, comme la constance de la vitesse de la lumière dans le vide (que nous verrons 
+        dans le deuxième paragraphe), qui sont primordiales afin de bien comprendre des phénomènes 
+        telle que la dilatation du temps. 
+        <br>
+        <br>
+         <b
+          span style="font-size:18px;"> La vitesse de la lumière dans le vide a la même valeur 
+          (approximativement 3×10<sup>8</sup> m/s) dans tous les référentiels inertiels </strong></span></b>
+          <br>
+          <br>
+          Ensuite, le deuxième postulat de cette théorie affirme que la vitesse de la lumière dans le vide ne 
+          peut pas s'additionner. Par exemple, imaginons que je sois dans un train dont la vitesse est de 100 
+          m/s (par rapport au sol) et que vous soyez à l'extérieur du train. Si je lance une balle à 10 m/s 
+          (par rapport au train) devant moi, la balle ira à 110 m/s (par rapport au sol) pour vous : c'est 
+          la composition des vitesses. Maintenant, imaginons que je tire un rayon lumineux dans le train. Ce 
+          rayon lumineux ira pour moi à la vitesse de la lumière, soit environ 300 000 km/s. Cependant, il 
+          ira exactement à la même vitesse pour vous : il n'y a aucune addition des vitesses. C'est ce que 
+          l'on veut dire dans "la vitesse de la lumière ne peut pas s'additionner". Théoriquement, il est 
+          impossible de dépasser la vitesse de la lumière. Ce postulat a été prouvé en partie par les équations 
+          de Maxwell et l'expérience de Michelson et Morley. L'expérience de Michelson et Morley avait pour but 
+          de détecter des variations de la vitesse de la lumière suivant l'orientation de la direction de la lumière 
+          par rapport au mouvement de la Terre. S'ils avaient détecté des changements, cela aurait signifié que la 
+          lumière se serait déplacée dans un référentiel absolu. Cependant, l'expérience n'a pas pu trouver de 
+          variation de vitesse. 
+          Elle a donc confirmé l'idée que la vitesse de la lumière est bien la même dans tous les référentiels. 
+          <br>
+          <br>
+          <a name="perte">
+          <b
+          span style="font-size:18px;"> La perte de simultanéité </strong></span></b></a>
+          <br>
+          <br>
+          La perte de simultanéité se réfère au fait que des événements qui 
+          semblent simultanés dans un référentiel ne le sont pas nécessairement dans un autre. 
+          Considérons l'illustration suivante :
+          <br>
+          <br>
+          <img src="C:\Users\Yussuf\Downloads\Untitled 4.png" alt=" ">
+          <br>
+          Dans le référentiel de la personne <i>A</i>, une source de lumière est placée à moitié-chemin entre deux receveurs, 
+          à une certaine distance de chacun. La source de lumière émet un flash. Dans le référentiel de la personne <i>A</i>, 
+          la lumière atteint les deux receveurs (celui à droite et celui à gauche) simultanément. Maintenant, considérons 
+          un autre observateur, noté <i>B</i>, qui se déplace vers la gauche à une certaine vitesse, notée <i>v</i>. Est-ce que 
+          l'événement 
+          "la lumière atteint le receveur à gauche" et l'événement "la lumière atteint l'observateur à droite" sont 
+          simultanés selon son référentiel ? 
+          En fait, selon le référentiel de la personne <i>B</i>, la situation paraît plutôt comme la figure suivante : 
+          <br>
+          <br>
+          <img src="C:\Users\Yussuf\Downloads\Untitled 3.png" alt=" ">
+          <br>
+          Si nous le voulons, nous pouvons prétendre que la personne A est sur un train et que la personne B debout sur le sol. 
+          Par rapport à B, les receveurs (avec tout le reste selon le référentiel de la personne A) se déplacent vers la droite 
+          avec un vitesse v. De plus, par rapport à la personne B, la lumière voyage à la même vitesse c dans les deux directions, 
+          comme indiqué sur la figure. En d'autres mots, selon le référentiel de la personne B, l'événement "la lumière atteint 
+          le receveur à gauche" et l'événement "la lumière atteint l'observateur à droite" ne sont pas simultanés en raison du 
+          fait que la vitesse de la lumière ne peut pas s'additionner ; 
+          qu'elle est la même dans tous les référentiels. Ceci est un concept contre-intuitif, mais qui est une conséquence importante du deuxième postulat. 
+          <br>
+          <br>
+          <a name="dilatation">
+          <b
+          span style="font-size:18px;"> La dilatation du temps </strong></span></b></a>
+          <br>
+          <br>
+          La dilatation du temps est un concept qui stipule que le temps ne s'écoule pas uniformément dans tous les 
+          référentiels. Il dépend de la vitesse relative entre les observateurs. Concrètement, plus un objet se déplace 
+          à une vitesse proche de celle de la lumière, plus le temps à bord de cet objet semble s'écouler lentement par 
+          rapport à une personne immobile. Un exemple connu est celui du paradoxe des jumeaux, qui peut être décrit de 
+          la manière suivante : considérons deux jumeaux ayant 30 ans. L'un demeure sur Terre et l'autre voyage dans 
+          l'espace dans une fusée dont la vitesse par rapport à la Terre est de 85% de celle de la lumière (soit d'environ 
+          255 000 km/s). Disons que ce jumeau emporte avec lui du matériel pour mesurer le temps, soit une horloge, par 
+          exemple. Après une période totale de 10 ans, le jumeau qui a voyagé dans l'espace est de retour sur Terre : il 
+          a maintenant 40 ans. Cependant, à sa surprise, il s'est écoulé 20 ans sur Terre, non pas 10. Son frère a donc 50 
+          ans. Étonnamment, ceci n'est pas une fabulation, mais bien ce que prédit la relativité restreinte. à
+          Le concept de dilatation du temps est un effet important des deux postulats fondamentaux de la théorie. 
+          <br>
+          Les équations de Lorentz décrivent bien ce concept. Par exemple, voici l'équation de la transformation du temps : 
+          <br>
+          <br>
+          <img src="C:\Users\Yussuf\Downloads\Untitled 5.png" alt=" ">
+          <br>
+          Où :
+          <ul>
+            <li>
+              <i>Δt</i> est l'intervalle de temps mesuré dans le référentiel au repos. 
+            </li>
+            <li>
+              <i>Δt′</i> est l'intervalle de temps mesuré dans le référentiel en mouvement. 
+            </li>
+            <li>
+              <i>v</i> est la vitesse relative entre les deux référentiels. 
+              <li>
+                <i>c</i> est la vitesse de la lumière dans le vide (approximativement 3×10<sup>8</sup> m/s et exactement 299 792 458 m/s) 
+              </li>
+            </li></ul>
+            <br>
+          Selon les variables connues, nous pouvons utiliser cette équation pour isoler Δt, Δt′ ou <i>v</i>. 
+          Par exemple, si nous connaissons l'intervalle de temps mesuré dans le référentiel au repos et 
+          la vitesse relative entre les deux référentiels, 
+          nous pouvons déterminer l'intervalle de temps mesuré dans le référentiel en mouvement.
+          <br>
+          <br>
+          <a name="contraction">
+          <b
+          span style="font-size:18px;"> La contraction des longueurs </strong></span></b></a>
+          <br>
+          <br>
+          Lorsque des objets se déplacent à un vitesse significative (proche de celle de la lumière) 
+          par rapport à un autre référentiel, leur longueur est contractée dans la direction de leur 
+          mouvement par rapport à la même longueur mesurée à partir d'un référentiel où le mouvement 
+          de l'objet n'est pas significatif. 
+          C'est ce phénomène qu'on appelle "contraction des longueurs".  
+      </p>
+    </div>
+    <div class="content" id="contexteContent">
+      <h1>Contexte historique</h1>
+      <!-- Contenu pour "contexte historique" -->
+    </div>
+    <div
+      class="content"
+      id="sourcesSupplementairesContent"
+      style="display: none"
+    >
+      <!-- contenu pour "sources supplémentaires" -->
+      <h1>Sources supplémentaires</h1>
+      <p>
+        Morin, David. (2016). "Special Relativity, For the Enthusiastic Beginner".<i>scholar.harvard.edu</i>
+        , Université de Harvard. <a class="savoir_plus" href="https://scholar.harvard.edu/files/david-morin/files/relativity_chap_1.pdf" target="_blank">En savoir plus</a>
+      </p>
+  </div>
+
+
+    </div>
+    <div class="content" id="aProposContent" style="display: none">
+      <!-- contenu pour "à propos" -->
+    </div>
+
+    <script>
+      function showContent(contentId, tab) {
+        var contentDivs = document.querySelectorAll(".content");
+        contentDivs.forEach(function (div) {
+          div.style.display = "none";
+        });
+
+        var activeContent = document.getElementById(contentId);
+        activeContent.style.display = "block";
+
+        var tabs = document.querySelectorAll(".tab");
+        tabs.forEach(function (tab) {
+          tab.classList.remove("active");
+        });
+        tab.classList.add("active");
+      }
+      showContent(
+        "contenuPrincipalContent",
+        document.querySelector(".tab.active")
+      );
+      
+      function convertMarkdownToHTML(markdownContent) {
+        document.getElementById('markdownContent').innerHTML = marked(markdownContent);
+
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+      var markdownContent = `
+        [En savoir plus](https://scholar.harvard.edu/files/david-morin/files/relativity_chap_1.pdf)`
+
+        convertMarkdownToHTML(markdownContent);
+      });
+
+    </script>
+  </body>
+</html>

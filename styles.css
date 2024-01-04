@@ -1,0 +1,50 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs {
+  display: flex;
+  background-color: #b1adad;
+  border-bottom: 2px solid #979595;
+}
+
+.tab {
+  text-decoration: none;
+  color: #2a2929;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tab:hover {
+  color: #3498db;
+}
+
+.tab.active {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+}
+.tab.active {
+  background-color: #3498db;
+  color: #fff;
+  border-bottom: 2px solid #2dc6ce;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+h1 {
+  color: rgb(180, 180, 180)
+}
+
+p {
+  color:rgb(220, 220, 220)
+}
+
+
