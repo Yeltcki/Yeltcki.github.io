@@ -56,17 +56,14 @@
         >Contenu principal</a
       >
       <a href="#" class="tab" onclick="showContent('contexteContent', this)"
-        >Contexte historique</a
-      >
+        >Contexte historique</a>
       <a
         href="#"
         class="tab"
         onclick="showContent('sourcesSupplementairesContent', this)"
-        >Sources supplémentaires</a
-      >
+        >Sources supplémentaires</a>
       <a href="#" class="tab" onclick="showContent('aProposContent', this)"
-        >À propos</a
-      >
+        >À propos</a>
     </div>
 
     <div class="content" id="contenuPrincipalContent">
@@ -249,6 +246,10 @@
     <div class="content" id="contexteContent">
       <h1>Contexte historique</h1>
       <!-- Contenu pour "contexte historique" -->
+    <p>
+      Dans l'onglet "contenu principal", nous nous concentrons sur le côté scientifique de la théorie de la relativité 
+      restreinte. Ici, nous verrons le côté historique.
+    </p>
     </div>
     <div
       class="content"
@@ -258,8 +259,28 @@
       <!-- contenu pour "sources supplémentaires" -->
       <h1>Sources supplémentaires</h1>
       <p>
+        <b>
+          <a span style="font-size: 18px;">Voici quelques sources supplémentaires qui traitent plus en profondeur
+          de la relativité restreinte pour les curieux </strong></span></a>
+        </b>
+        <br>
+        <br>
         Morin, David. (2016). "Special Relativity, For the Enthusiastic Beginner".<i>scholar.harvard.edu</i>
         , Université de Harvard. <a class="savoir_plus" href="https://scholar.harvard.edu/files/david-morin/files/relativity_chap_1.pdf" target="_blank">En savoir plus</a>
+      <br>
+      <br>
+      Louapre, David. (2017). "La Théorie de Relativité Restreinte d'Einstein". <i>Youtube.com.</i>
+      <a class="savoir_plus" href="https://www.youtube.com/watch?v=M86YM6QA4-M&ab_channel=ScienceEtonnante" target="_blank">En savoir plus</a>
+      <br>
+      <br>
+      Tong, David. (2021). "Notes on Relativity and Cosmology". <i>Département de mathématiques appliquées et de physique 
+      théorique, Université de Cambridge.</i>
+      <a class="savoir_plus" href="https://www.damtp.cam.ac.uk/user/tong/relativity/seven.pdf" target="_blank">En savoir plus</a>
+      <br>
+      <br>
+      <b>*Ce sont principalement
+       ces sources qui m'ont servi à effectuer ce travail. L'information présente dans mon projet provient
+      en grande partie de ces sources.*</b>
       </p>
   </div>
 
@@ -289,18 +310,6 @@
         "contenuPrincipalContent",
         document.querySelector(".tab.active")
       );
-      
-      function convertMarkdownToHTML(markdownContent) {
-        document.getElementById('markdownContent').innerHTML = marked(markdownContent);
-
-      }
-
-      document.addEventListener('DOMContentLoaded', function () {
-      var markdownContent = `
-        [En savoir plus](https://scholar.harvard.edu/files/david-morin/files/relativity_chap_1.pdf)`
-
-        convertMarkdownToHTML(markdownContent);
-      });
 
     </script>
   </body>
