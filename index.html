@@ -45,9 +45,53 @@
         color: blue;
       }
 
+      #quiz-container {
+        max-width: 2000px;
+        margin: auto;
+      }
+
+      .question {
+        margin-bottom: 20px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .choices label {
+        display: block;
+        justify-content: space-around;
+        margin-bottom: 10px;
+      }
+
+      .choices-btn {
+        padding: 10px;
+        margin: 5px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #4537af;
+      }
+
+      .result {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      .result2 {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+
+      button {
+        font-size: 15px;
+        padding: 9px;
+        font-family:sans-serif;
+      }
+
     </style>
   </head>
   <body>
+
     <div class="tabs">
       <a
         href="#"
@@ -63,7 +107,7 @@
         onclick="showContent('sourcesSupplementairesContent', this)"
         >Sources supplémentaires</a>
       <a href="#" class="tab" onclick="showContent('aProposContent', this)"
-        >À propos</a>
+        >Quiz</a>
     </div>
 
     <div class="content" id="contenuPrincipalContent">
@@ -287,7 +331,90 @@
 
     </div>
     <div class="content" id="aProposContent" style="display: none">
-      <!-- contenu pour "à propos" -->
+      <!-- contenu pour "Quiz" -->
+      <h1>Testez vos connaissances !</h1>
+
+      <div id="quiz-container">
+        <div class="question" id="question">
+          <h2>Question 1 : Qu'est-ce qu'un référentiel en physique ?</h2>
+        </div>
+        <div class="choices" id="choices">
+          <label>
+            <input type="radio" name="q1" value="a"> C'est un outil qui permet d'attribuer des coordonnées dans 
+            l'espace et dans le temps à des événements afin de s'y repérer. 
+          </label>
+          <label>
+            <input type="radio" name="q1" value="b"> C'est un synonyme de "vélocité" ou "vitesse de la lumière".
+          </label>
+          <label>
+            <input type="radio" name="q1" value="c"> C'est un système de référence qui est nécessairement en accélération par 
+            rapport aux étoiles fixes.
+          </label>
+          <label>
+            <input type="radio" name="q1" value="d"> C'est un système de référence qui est nécessairement en mouvement rectiligne 
+            uniforme.
+          </label>
+        </div>
+        <button onclick="checkAnswer()">Soumettre</button>
+        <p class="result" id="result"></p>
+
+
+        <div id="quiz-container">
+          <div class="question" id="question">
+            <h2>Question 2 : Vrai ou faux ? Certains référentiels inertiels sont plus avantageux que d'autres.</h2>
+          </div>
+          <div class="choices" id="choices">
+            <label>
+              <input type="radio" name="q2" value="a"> Vrai.
+            </label>
+            <label>
+              <input type="radio" name="q2" value="b"> Faux.
+            </label>
+          </div>
+          <button onclick="checkAnswer2()">Soumettre</button>
+          <p class="result2" id="result2"></p>
+        
+      </div>
+    </div>
+
+    <script>
+      function checkAnswer() {
+        var selectedOption = document.querySelector('input[name="q1"]:checked');
+
+        if (selectedOption) {
+          var userAnswer = selectedOption.value;
+          var correctAnswer = 'a';
+    
+          if (userAnswer === correctAnswer) {
+            document.getElementById('result').innerText = 'Bonne réponse !';
+          } else {
+            document.getElementById('result').innerText = 'Réponse erronnée. Réessayez !';
+          }
+        } else {
+          document.getElementById('result').innerText = 'Veuillez choisir une option.';
+        }
+      }
+    </script>
+    
+    <script>
+      function checkAnswer2() {
+        var selectedOption = document.querySelector('input[name="q2"]:checked');
+
+        if (selectedOption) {
+          var userAnswer = selectedOption.value;
+          var correctAnswer = 'b';
+    
+          if (userAnswer === correctAnswer) {
+            document.getElementById('result2').innerText = 'Bonne réponse !';
+          } else {
+            document.getElementById('result2').innerText = 'Réponse erronnée. Réessayez !';
+          }
+        } else {
+          document.getElementById('result2').innerText = 'Veuillez choisir une option.';
+        }
+      }
+    </script>
+
     </div>
 
     <script>
