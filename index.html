@@ -86,6 +86,11 @@
         font-weight: bold;
       }
 
+      .result4 {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
 
       button {
         font-size: 15px;
@@ -400,8 +405,27 @@
             </div>
             <button onclick="checkAnswer('q3', 'b')">Soumettre</button>
             <p class="result3" id="resultq3"></p>
-        
+          <div class="question" id="question">
+            <h2>Question 4 : Supposons que vous soyez dans un vaisseau spatial en mouvement rectiligne uniforme 
+              à une vitesse égale à 50% celle de la lumière et que vous décidez de réaliser une expérience.
+              Si un collègue qui se trouve sur la Terre effectue la même expérience, les résultats de son expérience
+              seront :
+            </h2>
+          </div>
+          <div class="choices" id="choices">
+            <label>
+              <input type="radio" name="q4" value="a" explanation=""> Différents, car le référentiel est différent.
+            </label>
+            <label>
+            <input type="radio" name="q4" value="b" explanation=""> Différents, car l'un est immobile et l'autre se déplace à une vitesse significative.
+          </label>
+          <label>
+            <input type="radio" name="q4" value="c"> Pareils, car les lois de la physique sont les mêmes dans tous les référentiels inertiels.
+          </label>
+          </div>
       </div>
+      <button onclick="checkAnswer('q4', 'c')">Soumettre</button>
+      <p class="result4" id="resultq4"></p>
     </div>
 
     <script>
