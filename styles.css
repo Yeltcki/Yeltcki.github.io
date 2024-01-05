@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -40,11 +40,17 @@ body {
 }
 
 h1 {
-  color: rgb(180, 180, 180)
+  color: rgb(180, 180, 180);
 }
 
 p {
-  color:rgb(220, 220, 220)
+  color: rgb(220, 220, 220);
 }
 
+.correct-feedback {
+  color:rgb(25, 192, 25);
+}
 
+.error-feedback {
+  color:rgb(231, 23, 23);
+}
