@@ -18,140 +18,6 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>La théorie de la relativité restreinte</title>
-    <style>
-      a.savoir_plus:link {
-        color: red;
-      }
-      a.savoir_plus:visited {
-        color: orange;
-      }
-      body {
-        color: rgb(220, 220, 220);
-        background-color: rgb(34, 34, 34);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100vh;
-      }
-      img {
-        display: flex;
-        margin: auto;
-        justify-content: center;
-        max-width: 100%;
-        max-height: 100%;
-      }
-      
-      .active {
-        color: blue;
-      }
-
-      #quiz-container {
-        max-width: 2000px;
-        margin: auto;
-      }
-
-      .question {
-        margin-bottom: 20px;
-        width: 100%;
-        margin: auto;
-        font-size: 14px;
-      }
-
-      .question3 {
-        margin-bottom: 20px;
-        width: 100%;
-        margin: auto;
-        font-size: 13px;
-      }
-
-      .question4 {
-        margin-bottom: 20px;
-        width: 100%;
-        margin: auto;
-        font-size: 12px;
-      }
-
-      .question8 {
-        margin-bottom: 20px;
-        width: 100%;
-        margin: auto;
-        font-size: 12px;
-      }
-
-      .choices label {
-        display: block;
-        justify-content: space-around;
-        margin-bottom: 10px;
-      }
-
-      .choices-btn {
-        padding: 10px;
-        margin: 5px;
-        cursor: pointer;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #4537af;
-      }
-
-      .result {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-
-      .result2 {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-
-      .result3 {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-
-      .result4 {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-
-      .result5 {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-
-      .result6 {
-        margin-top: 20px;
-        font-weight: bold;
-      }
-
-      .question-color {
-        color: rgb(136, 27, 136);
-        font-size: 27px;
-      }
-
-
-      button {
-        font-size: 15px;
-        padding: 9px;
-        font-family:sans-serif;
-        clear: both;
-        display: block;
-      }
-
-      #explanation {
-        text-align: justify;
-      }
-
-      .easy {
-        color: rgb(16, 159, 19);
-        font-size: 30px;
-      }
-      
-      .medium {
-        color: rgb(199, 190, 17);
-        font-size: 30px;
-      }
-
-    </style>
   </head>
   <body>
 
@@ -489,13 +355,13 @@
     </div>
     <div class="choices" id="choices5">
       <label>
-        <input type="radio" name="q5" value="a" explanation="Explication : Selon la relativité restreinte, la vitesse de la lumière est la même dans tous les référentiels."> Celle de la vitesse de la lumière additionnée à la vitesse du bateau.
+        <input type="radio" name="q5" value="a" explanation=""> Celle de la vitesse de la lumière additionnée à la vitesse du bateau.
       </label>
       <label>
-      <input type="radio" name="q5" value="b" explanation="Explication : Selon la relativité restreinte, la vitesse n'a aucun effet sur les lois de la physique."> Celle de la vitesse de la lumière.
+      <input type="radio" name="q5" value="b" explanation=""> Celle de la vitesse de la lumière.
     </label>
     <label>
-      <input type="radio" name="q5" value="c" explanation="Explication : La vitesse d'un rayon lumineux correspond toujours à celle de la lumière."> Celle de la vitesse du bateau.
+      <input type="radio" name="q5" value="c" explanation=""> Celle de la vitesse du bateau.
     </label>
     </div>
 <div>
@@ -504,26 +370,22 @@
 </div>
 
 <div class="question4" id="question6">
-  <h2><div class="question-color">Question 6 :</div>Supposons que deux personnes (nommées A et B) soient chacune placée à l'extrémité différente
-    d'un train qui se déplace à 16 m/s. Une source de lumière placée à mi-chemin entre ces deux personnes émet un flash.
-    Supposons qu'une personne, nommée C, à l'extérieur du véhicule et immobile par rapport à celui-ci observe la scène.
-    Comment peut-on expliquer cette situation selon le référentiel de la personne A, B et C ?
+  <h2><div class="question-color">Question 6 :</div>Supposons qu'une personne voyage à une vitesse égale à 
+    25% de celle de la lumière pendant un certain nombre d'années. De quelle façon le temps passe-t-il dans son
+    vaisseau spatial par rapport à la Terre ?
     
     
   </h2>
 </div>
 <div class="choices" id="choices6">
   <label>
-    <input type="radio" name="q6" value="a" explanation="Explication : Selon la relativité restreinte, la vitesse de la lumière est la même dans tous les référentiels."> Peu importe le référentiel, le flash atteint les personnes A et B en même temps.
+    <input type="radio" name="q6" value="a" explanation="Explication : Lorsqu'une personne voyage à une vitesse proche de celle de la lumière, le temps passe plus lentement."> Il n'y a aucun changement.
   </label>
   <label>
-  <input type="radio" name="q6" value="b" explanation="Explication : Selon la relativité restreinte, la vitesse n'a aucun effet sur les lois de la physique."> Peu importe le référentiel, le flash n'atteint pas les personnes A et B en même temps.
+  <input type="radio" name="q6" value="b" explanation=""> Il passe plus rapidement.
 </label>
 <label>
-  <input type="radio" name="q6" value="c" explanation="Explication : La vitesse d'un rayon lumineux correspond toujours à celle de la lumière."> Selon le référentiel de la personne A et B, le flash les atteint en même temps. Selon le référentiel de la personne C, le flash ne les atteint pas en même temps.
-</label>
-<label>
-  <input type="radio" name="q6" value="d" explanation="Explication : La vitesse d'un rayon lumineux correspond toujours à celle de la lumière."> Selon le référentiel de la personne A et B, le flash ne les atteint pas en même temps. Selon le référentiel de la personne C, le flash les atteint en même temps.
+  <input type="radio" name="q6" value="c" explanation=""> Il passe plus lentement.
 </label>
 </div>
 <div>
@@ -531,9 +393,35 @@
 <p class="result6" id="resultq6"></p>
 </div>
 
+<div class="question4" id="question7">
+  <h2><div class="question-color">Question 7 :</div>Dans quelle direction est contractée la longueur d'un objet
+    qui se déplace à une vitesse significative (proche de celle de la lumière) par rapport à un autre référentiel ?
+    
+    
+  </h2>
+</div>
+<div class="choices" id="choices7">
+  <label>
+    <input type="radio" name="q7" value="a" explanation=""> Dans la direction de leur mouvement.
+  </label>
+  <label>
+  <input type="radio" name="q7" value="b" explanation=""> Dans la direction inverse à leur mouvement.
+</label>
+<label>
+  <input type="radio" name="q7" value="c" explanation=""> Elle n'est pas contractée.
+</label>
+</div>
+<div>
+<button onclick="checkAnswer('q7', 'a', 'Explication pour la réponse B')">Soumettre</button>
+<p class="result7" id="resultq7"></p>
+</div>
 
 
 
+
+<div class="hard">
+  Questions 8 à 10 : Difficile
+</div>
 <div class="question4" id="question8">
   <h2><div class="question-color">Question 8 :</div>Supposons que deux personnes (nommées A et B) soient chacune placée à l'extrémité différente
     d'un train qui se déplace à 16 m/s. Une source de lumière placée à mi-chemin entre ces deux personnes émet un flash.
@@ -545,44 +433,71 @@
 </div>
 <div class="choices" id="choices8">
   <label>
-    <input type="radio" name="q8" value="a" explanation="Explication : Selon la relativité restreinte, la vitesse de la lumière est la même dans tous les référentiels."> Peu importe le référentiel, le flash atteint les personnes A et B en même temps.
+    <input type="radio" name="q8" value="a" explanation=""> Peu importe le référentiel, le flash atteint les personnes A et B en même temps.
   </label>
   <label>
-  <input type="radio" name="q8" value="b" explanation="Explication : Selon la relativité restreinte, la vitesse n'a aucun effet sur les lois de la physique."> Peu importe le référentiel, le flash n'atteint pas les personnes A et B en même temps.
+  <input type="radio" name="q8" value="b" explanation=""> Peu importe le référentiel, le flash n'atteint pas les personnes A et B en même temps.
 </label>
 <label>
-  <input type="radio" name="q8" value="c" explanation="Explication : La vitesse d'un rayon lumineux correspond toujours à celle de la lumière."> Selon le référentiel de la personne A et B, le flash les atteint en même temps. Selon le référentiel de la personne C, le flash ne les atteint pas en même temps.
+  <input type="radio" name="q8" value="c" explanation=""> Selon le référentiel de la personne A et B, le flash les atteint en même temps. Selon le référentiel de la personne C, le flash ne les atteint pas en même temps.
 </label>
 <label>
-  <input type="radio" name="q8" value="d" explanation="Explication : La vitesse d'un rayon lumineux correspond toujours à celle de la lumière."> Selon le référentiel de la personne A et B, le flash ne les atteint pas en même temps. Selon le référentiel de la personne C, le flash les atteint en même temps.
+  <input type="radio" name="q8" value="d" explanation=""> Selon le référentiel de la personne A et B, le flash ne les atteint pas en même temps. Selon le référentiel de la personne C, le flash les atteint en même temps.
 </label>
 </div>
 <div>
 <button onclick="checkAnswer('q8', 'c', 'Explication pour la réponse B')">Soumettre</button>
 <p class="result8" id="resultq8"></p>
-</div>
+
+
+      <br />
+      <br />  
+      <h1 id="result_points" style="position: fixed; top: 45px; left: 135px;">Points total : </h1>
+
+    </div>
 
 
 
     <script>
+      const answers = {};
+
       function checkAnswer(inputName, correctAnswer, explanation) {
         var selectedOption = document.querySelector(`input[name="${inputName}"]:checked`);
 
         if (selectedOption) {
           var userAnswer = selectedOption.value;
+          
     
           if (userAnswer === correctAnswer) {
             document.getElementById('result' + inputName).innerHTML = '<span class="correct-feedback">Bonne réponse !</span>';
+            
+            if (!(inputName in answers)) {
+              answers[inputName] = 1;
+              document.getElementById("result_points").innerText = "Points total: " + totalPoints() + " / 10";
+            }
           } else {
             const explanation = selectedOption.getAttribute("explanation")
             document.getElementById('result' + inputName).innerHTML = '<span class="error-feedback">Réponse erronnée. Réessayez ! </span>' + explanation;
+            
+            if (!(inputName in answers)) {
+              answers[inputName] = 0;
+              document.getElementById("result_points").innerText = "Points total: " + totalPoints() + " / 10";
+            }
           }
         } else {
           document.getElementById('result' + inputName).innerHTML = 'Veuillez choisir une option.';
         }
       }
 
-</script>
+      function totalPoints() {
+        let sum = 0;
+        for(const question in answers) {
+          sum += answers[question];
+        }
+        return sum;
+      }
+
+    </script>
 
     </div>
 

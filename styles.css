@@ -54,3 +54,149 @@ p {
 .error-feedback {
   color:rgb(231, 23, 23);
 }
+
+a.savoir_plus:link {
+  color: red;
+}
+a.savoir_plus:visited {
+  color: orange;
+}
+body {
+  color: rgb(220, 220, 220);
+  background-color: rgb(34, 34, 34);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+img {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.active {
+  color: blue;
+}
+
+#quiz-container {
+  max-width: 2000px;
+  margin: auto;
+}
+
+.question {
+  margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  font-size: 14px;
+}
+
+.question3 {
+  margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  font-size: 13px;
+}
+
+.question4 {
+  margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  font-size: 12px;
+}
+
+.question8 {
+  margin-bottom: 20px;
+  width: 100%;
+  margin: auto;
+  font-size: 12px;
+}
+
+.choices label {
+  display: block;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.choices-btn {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #4537af;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.result2 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.result3 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.result4 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.result5 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.result6 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.result7 {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.question-color {
+  color: rgb(166, 38, 166);
+  font-size: 27px;
+}
+
+
+button {
+  font-size: 15px;
+  padding: 9px;
+  font-family:sans-serif;
+  clear: both;
+  display: block;
+}
+
+#explanation {
+  text-align: justify;
+}
+
+.easy {
+  color: rgb(16, 159, 19);
+  font-size: 30px;
+}
+
+.medium {
+  color: rgb(199, 190, 17);
+  font-size: 30px;
+}
+
+.hard {
+  color: rgb(206, 31, 31);
+  font-size: 30px;
+}
+
+#result_points {
+  color:rgb(166, 185, 219)
+}
