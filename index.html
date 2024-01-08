@@ -473,7 +473,7 @@
             
             if (!(inputName in answers)) {
               answers[inputName] = 1;
-              document.getElementById("result_points").innerText = "Points total: " + totalPoints() + " / 10";
+              document.getElementById("result_points").innerText = "Votre score : " + totalPoints() + " / 10";
             }
           } else {
             const explanation = selectedOption.getAttribute("explanation")
@@ -481,7 +481,7 @@
             
             if (!(inputName in answers)) {
               answers[inputName] = 0;
-              document.getElementById("result_points").innerText = "Points total: " + totalPoints() + " / 10";
+              document.getElementById("result_points").innerText = "Votre score : " + totalPoints() + " / 10";
             }
           }
         } else {
