@@ -35,8 +35,9 @@ body {
 .content {
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 30px;
   text-align: justify;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 h1 {
@@ -67,6 +68,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
 }
 img {

@@ -20,7 +20,6 @@
     <title>La théorie de la relativité restreinte</title>
   </head>
   <body>
-
     <div class="tabs">
       <a
         href="#"
@@ -39,7 +38,7 @@
         >Quiz</a>
     </div>
 
-    <div class="content" id="contenuPrincipalContent">
+    <div class="content" id="contenuPrincipalContent" data-background="abstract-space-8-4k.jpg">
       <h1>La théorie de la relativité restreinte</h1>
       <p>
         Pendant des siècles, les scientifiques les plus prodigieux ont tenté de
@@ -216,7 +215,7 @@
           C'est ce phénomène qu'on appelle "contraction des longueurs".  
       </p>
     </div>
-    <div class="content" id="contexteContent">
+    <div class="content" id="contexteContent" data-background="nebula-space-stars-andromeda-5740-4k-wallpaper-uhdpaper.com-481@0@h.jpg">
       <h1>Contexte historique</h1>
       <!-- Contenu pour "contexte historique" -->
     <p>
@@ -228,13 +227,14 @@
       class="content"
       id="sourcesSupplementairesContent"
       style="display: none"
+      data-background="galaxy-space-digital-art-4k-wallpaper-uhdpaper.com-912@0@f.jpg"
     >
       <!-- contenu pour "sources supplémentaires" -->
       <h1>Sources supplémentaires</h1>
       <p>
         <b>
           <a span style="font-size: 18px;">Voici quelques sources supplémentaires qui traitent plus en profondeur
-          de la relativité restreinte pour les curieux </strong></span></a>
+          de la relativité restreinte pour les curieux. </strong></span></a>
         </b>
         <br>
         <br>
@@ -259,7 +259,7 @@
 
 
     </div>
-    <div class="content" id="aProposContent" style="display: none">
+    <div class="content" id="aProposContent" style="display: none" data-background="galaxy-stars-space-digital-art-4k-wallpaper-uhdpaper.com-101@0@i.jpg">
       <!-- contenu pour "Quiz" -->
       <h1>Testez vos connaissances !</h1>
       
@@ -402,10 +402,10 @@
 </div>
 <div class="choices" id="choices7">
   <label>
-    <input type="radio" name="q7" value="a" explanation=""> Dans la direction de leur mouvement.
+    <input type="radio" name="q7" value="a" explanation=""> Dans la direction de son mouvement.
   </label>
   <label>
-  <input type="radio" name="q7" value="b" explanation=""> Dans la direction inverse à leur mouvement.
+  <input type="radio" name="q7" value="b" explanation=""> Dans la direction inverse à son mouvement.
 </label>
 <label>
   <input type="radio" name="q7" value="c" explanation=""> Elle n'est pas contractée.
@@ -452,7 +452,7 @@
 
       <br />
       <br />  
-      <h1 id="result_points" style="position: fixed; top: 45px; left: 135px;">Points total : </h1>
+      <h1 id="result_points" style="position: fixed; top: 45px; left: 135px;">Votre score : </h1>
 
     </div>
 
@@ -500,7 +500,6 @@
     </script>
 
     </div>
-
     <script>
       function showContent(contentId, tab) {
         var contentDivs = document.querySelectorAll(".content");
@@ -510,6 +509,7 @@
 
         var activeContent = document.getElementById(contentId);
         activeContent.style.display = "block";
+        document.querySelectorAll("body")[0].style.backgroundImage = `url("${activeContent.getAttribute("data-background")}")`;
 
         var tabs = document.querySelectorAll(".tab");
         tabs.forEach(function (tab) {
@@ -521,7 +521,6 @@
         "contenuPrincipalContent",
         document.querySelector(".tab.active")
       );
-
     </script>
   </body>
 </html>
