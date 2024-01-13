@@ -202,3 +202,9 @@ button {
 #result_points {
   color:rgb(166, 185, 219)
 }
+
+.michelson {
+  font-size: smaller;
+  text-align: center;
+  margin: auto;
+}
